@@ -1,12 +1,20 @@
-# Key Rotator
-This script can be used to rotate AWS access keys.  
+# AWS Access key rotator
+
+AWS Access key rotator. 
+
+This script will display and or rotate current access keys(s) age and and status. 
+
 Usage: 
-key_rotator.py --username <username> --key <aws_access_key> 
 
-optional flags: 
+    python key_rotator.py \
+    --username <username> \
+    --key <access_key>
 
---delete (deletes a key)
+Optional flags:
 
---disable (disables a key)
+    --rotate    (rotate the provided keys (create new, disable provided key, delete provided key))
 
-The script assume that the user executing the script has an IAM policy that allows them to create/modify/delete AWS access keys. 
+
+# Credit
+
+Based on/adapted from [jicowan/key_rotator](https://github.com/jicowan/key_rotator/blob/master/key_rotator.py) 
